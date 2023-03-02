@@ -30,3 +30,25 @@ const myFunction = function(){
     console.log("Hello");
 }
 
+//##############################################################################
+
+// Stack memory(primitive use) and heap memory(non-primitive use)
+
+let myname = "rajal"
+let anothername = "myname"
+anothername = "ronil"
+
+console.log(myname);
+console.log(anothername);
+
+// heap
+
+let userone = {
+    email: "rajal@gmail.com",
+    upi: "rajalxyz"
+}
+let usertwo = userone
+
+usertwo.email = "ronil@gmail.com"
+console.log(userone.email);
+console.log(usertwo.email);
